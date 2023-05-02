@@ -18,8 +18,8 @@ int main(void)
 			sum += i;
 		}
 	}
-	_put(sum);
-	_put('\n');
+	_putchar(sum);
+	_putchar('\n');
 
 	return (0);
 }
