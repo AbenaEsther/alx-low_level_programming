@@ -2,7 +2,7 @@
 /**
   * main - Prints the sum of all multiples of 3 or 5 up to 1024
   *
-  * Return: 0 (Success)
+  * Return: Always (Success)
   */
 
 int main() {
@@ -16,7 +16,7 @@ int main() {
 		    sum += i;
 	    }
     }
-   _putchar("%d\n", sum);
+   _putchar('\n', sum);
     return 0;
 }
 
