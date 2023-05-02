@@ -9,20 +9,20 @@
 int main(void)
 {
 	int count = 3;
-	int first = 1, second = 2;
-	int next = first + second;
-	printf("%d\n, ", first);
-	printf("%d\n, ", second);
+	long int first = 1, second = 2;
+	long next = first + second;
+	printf("%lu, ", first);
+	printf("%lu, ", second);
 	
 	while (count <= 50)
 	{
 		if (count == 50)
 		{
-			printf("%d\n", next);
+			printf("%lu \n", next);
 		}
 		else
 		{
-			printf("%d\n, ", next);
+			printf("%lu, ", next);
 		}
 		first = second;
 		second = next;
