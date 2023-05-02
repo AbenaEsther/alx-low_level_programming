@@ -9,6 +9,7 @@
 int main(void)
 {
 	int num1 = 1, num2 = 2, i = 3, temp;
+
 	printf("%d\n%d\n", num1, num2);
 	for (i = 3; i <= 50; i++)
 	{
