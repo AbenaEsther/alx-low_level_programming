@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
   * main - Prints the sum of all multiples of 3 or 5 up to 1024
@@ -18,8 +18,8 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf(sum);
-	printf('\n');
+	_put(sum);
+	_put('\n');
 
 	return (0);
 }
