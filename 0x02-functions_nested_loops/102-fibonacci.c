@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
   * main - Prints the first 50 fibonacci numbers
@@ -20,7 +19,7 @@ int main(void)
 		if (count == 50)
 		{
 			printf("%lu \n", next);
-			break;
+			
 		}
 		else
 		{
