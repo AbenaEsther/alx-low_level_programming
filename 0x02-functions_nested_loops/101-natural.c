@@ -5,19 +5,20 @@
   * Return: Always (Success)
   */
 
-int main() {
-    int sum = 0;
-    int i = 1;
-
-    for (i = 0; i < 1024; i++) 
-    {
-	    if(i % 3 == 0 || i % 5 == 0)
-	    {
-		    sum += i;
-	    }
-    }
-    _putchar(sum);
-    _putchar('\n');
-    return 0;
+int main(void)
+{
+	int sum = 0;
+	int i = 1; 
+	
+	for (i = 0; i < 1024; i++)
+	{
+		if(i % 3 == 0 || i % 5 == 0)
+		{
+			sum += i;
+		}
+	}
+	_putchar(sum);
+	_putchar('\n');
+	return 0;
 }
 
