@@ -11,18 +11,18 @@ int main(void)
 	int count = 3;
 	int first = 1, second = 2;
 	int next = first + second;
-	printf("%lu, ", first);
-	printf("%lu, ", second);
+	printf("%d\n, ", first);
+	printf("%d\n, ", second);
 	
 	while (count <= 50)
 	{
 		if (count == 50)
 		{
-			printf("%lu \n", next);
+			printf("%d\n", next);
 		}
 		else
 		{
-			printf("%lu, ", next);
+			printf("%d\n, ", next);
 		}
 		first = second;
 		second = next;
