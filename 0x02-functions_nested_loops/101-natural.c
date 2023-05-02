@@ -16,7 +16,8 @@ int main() {
 		    sum += i;
 	    }
     }
-   _putchar('\n', sum);
+    _putchar(sum);
+    _putchar('\n');
     return 0;
 }
 
