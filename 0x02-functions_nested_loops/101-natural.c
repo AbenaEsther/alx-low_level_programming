@@ -18,5 +18,7 @@ int main(void)
 	}
 	_putchar(sum);
 	_putchar('\n');
+
+	return 0;
 }
 
