@@ -9,8 +9,8 @@ int main(void)
 {
 	int sum = 0;
 	int i = 1;
-	for (i = 0; i < 1024; i++)
 
+	for (i = 0; i < 1024; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
@@ -20,6 +20,6 @@ int main(void)
 	_putchar(sum);
 	_putchar('\n');
 
-	return 0;
+	return (0);
 }
 
