@@ -17,8 +17,8 @@ int main(void)
 			sum += i;
 		}
 	}
-	_putchar(sum);
-	_putchar('\n');
+	printf(sum);
+	printf('\n');
 
 	return (0);
 }
