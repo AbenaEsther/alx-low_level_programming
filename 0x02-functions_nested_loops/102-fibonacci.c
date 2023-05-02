@@ -6,17 +6,29 @@
   * Return: Nothing!
   */
 
-int main()
+int main(void)
 {
-	int num1 = 1, num2 = 2, i = 3, temp;
-
-	printf("%d\n%d\n", num1, num2);
-	for (i = 3; i <= 50; i++)
+	int count = 3;
+	int first = 1, second = 2;
+	int next = first + second;
+	printf("%lu, ", first);
+	printf("%lu, ", second);
+	
+	while (count <= 50)
 	{
-		temp = num1 + num2;
-		printf("%d\n", temp);
-		num1 = num2;
-		num2 = temp;
+		if (count == 50)
+		{
+			printf("%lu \n", next);
+		}
+		else
+		{
+			printf("%lu, ", next);
+		}
+		first = second;
+		second = next;
+		next = first + second;
+		count++;
 	}
 	return (0);
 }
+
