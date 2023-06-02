@@ -25,7 +25,7 @@ size_t print_list(const list_t *h)
 		h = h->next;
 
 		/* Increment the node count */
-		count ++;
+		count += 1;
 	}
 
 	/* Print the last node */
