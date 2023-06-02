@@ -11,28 +11,28 @@ size_t print_list(const list_t *h)
 {
 	size_t count = 1;
 
-	// If the head is NULL, there are no nodes, so return 0
+	/* If the head is NULL, there are no nodes, so return 0 */
 	if (h == NULL)
 		return (0);
 
-	// Iterate through the linked list until the last node
+	/* Iterate through the linked list until the last node */
 	while (h->next != NULL)
 	{
-		// If the string in the current node is NULL, print (nil)
+		/* If the string in the current node is NULL, print (nil) */
 		if (h->str == NULL)
 			printf( "[0](nil)\n");
 		else
 			printf("[%d] %s\n", h->len, h->str);
 
-		// Move to the next node
+		/* Move to the next node */
 		h = h->next;
 
-		// Increment the node count
+		/* Increment the node count */
 		count += 1;
 	}
 
-	// Print the last node
-	printf("[%d] %s\n", h->len, h->str)
+	/* Print the last node */
+	printf("[%d] %s\n", h->len, h->str);
 
 	return (count);
 }
