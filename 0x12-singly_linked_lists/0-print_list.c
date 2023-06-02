@@ -12,10 +12,6 @@ size_t print_list(const list_t *h)
 {
 	size_t count = 1;
 
-	/* If the head is NULL, there are no nodes, so return 0 */
-	if (h == NULL)
-		return (0);
-
 	/* Iterate through the linked list until the last node */
 	while (h!= NULL)
 	{
