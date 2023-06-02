@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h> 
 
 /**
  * print_list - prints elements in linked list
@@ -12,11 +13,11 @@ size_t print_list(const list_t *h)
 	size_t count = 1;
 
 	/* If the head is NULL, there are no nodes, so return 0 */
-	/* if (h == NULL)
-		return (0); */
+	if (h == NULL)
+		return (0);
 
 	/* Iterate through the linked list until the last node */
-	while (h->next != NULL)
+	while (h!= NULL)
 	{
 		/* If the string in the current node is NULL, print (nil) */
 		if (h->str == NULL)
