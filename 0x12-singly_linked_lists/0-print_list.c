@@ -29,7 +29,7 @@ size_t print_list(const list_t *h)
 	}
 
 	/* Print the last node */
-	/* printf("[%d] %s\n", h->len, h->str); */
+	 printf("[%d] %s\n", h->len, h->str); 
 
 	return (count);
 }
