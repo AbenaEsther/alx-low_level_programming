@@ -44,7 +44,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		/* Traverse list to find the last node */
+		/* Traverse the list to find the last node */
 		temp = *head;
 		while (temp->next != NULL)
 			temp = temp->next;
