@@ -16,24 +16,24 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (str == NULL)
 		return (NULL);
 
-	/* creating a new node */
+	/* Create a new node */
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
-		/* returns NULL if memory allocation fails */
+		/* Return NULL if memory allocation fails */
 		return (NULL);
 	}
 
-	/* duplicates the input string */
+	/* Duplicate the input string */
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 	{
-		/* freeing memory and return NULL if string duplication fails */
+		/* Free memory and return NULL if string duplication fails */
 		free(new_node);
 		return (NULL);
 	}
 
-	/* sets the length of the string */
+	/* Set the length of the string */
 	new_node->len = strlen(str);
 	new_node->next = NULL;
 
@@ -44,12 +44,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		/* traverse list to find the last node */
+		/* Traverse list to find the last node */
 		temp = *head;
 		while (temp->next != NULL)
 			temp = temp->next;
 
-		/* settingthe next pointer of the last node to the new node */
+		/* Set the next pointer of the last node to the new node */
 		temp->next = new_node;
 	}
 
