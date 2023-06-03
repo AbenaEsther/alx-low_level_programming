@@ -19,7 +19,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	/* Create a new node */
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
-		return (NULL
+	{
+		/* Return NULL if memory allocation fails */
+		return (NULL);
+	}
 
 	/* Duplicate the input string */
 	new_node->str = strdup(str);
@@ -52,3 +55,4 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	return (new_node);
 }
+
